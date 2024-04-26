@@ -8,10 +8,10 @@ function ChatPage() {
             <div className=" flex justify-center items-center w-full h-screen">
                 <div className=" overflow-hidden  flex border border-black w-[1080px] rounded-xl h-[600px]">
 
-                    <div className="w-[45%] border border-black h-full">
+                    <div className="w-[40%] border border-black h-full">
                         <SideBar/>
                     </div>
-                    <div className=" w-full border border-black h-full">
+                    <div className=" w-[65%] sm:w-full border border-black h-full">
                         <ChatSection/>
                     </div>
 

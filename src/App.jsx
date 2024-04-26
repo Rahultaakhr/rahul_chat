@@ -1,3 +1,4 @@
+import ChatSection from "./components/ChatSection";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Registration/Login";
 import MyContext from "./context/MyContext";
@@ -26,6 +27,8 @@ function App() {
             <Route path="/" element={<ProtectedRoutes>
               <Home />
             </ProtectedRoutes>} />
+            
+            <Route path="/chatsection" element={<ChatSection />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
           </Routes>

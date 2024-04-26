@@ -5,8 +5,8 @@ import UsersList from "./UsersList";
 
 function SideBar() {
   return (
-    <div className="">
-        <NavBar/>
+    <div className="  md:w-full relative">
+        <NavBar className={'relative'}/>
         <SearchBar/>
         <UsersList/>
     </div>

@@ -1,11 +1,13 @@
 import MyContext from "../context/MyContext";
 import React, { useContext, useEffect, useState } from "react";
 import { collection, doc, onSnapshot, query } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 import { fireDB } from "../firebase/firebaseConfig";
 
 function UsersList() {
 
     const {dispatch}=useContext(MyContext)
+    const navigate=useNavigate()
 
     const [chat, setChat] = useState({})
     const {currentUser}=useContext(MyContext)
@@ -41,6 +43,8 @@ function UsersList() {
             <div key={index} className=" flex rounded-md mx-1 px-2 h-[60px] items-center bg-[#5f48c8] gap-2 my-1"
             onClick={()=>{
                 handleSelect(userChat[1].userInfo)
+                navigate('/chatsection')
+                
             }}>
             <img className=" w-[50px] h-[50px] rounded-full" src={userChat[1].userInfo.photoURL} alt="" />
             <div className=" w-full">

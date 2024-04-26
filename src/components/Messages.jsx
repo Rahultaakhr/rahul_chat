@@ -33,7 +33,7 @@ function Messages() {
   },[chatData])
 
   return (
-    <div className={`h-[66vh] overflow-y-scroll scrollbar-none px-2`}>
+    <div className={`h-[71vh] md:bg-transparent  md:h-[66vh] overflow-y-scroll scrollbar-none px-2`}>
       {chatData.map((chat) => {
         if (chat.senderId === currentUser.uid) {
           return <Message key={chat.id} message={chat.text} media={chat.img} />;

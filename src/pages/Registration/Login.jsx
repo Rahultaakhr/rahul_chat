@@ -7,6 +7,7 @@ import { auth, fireDB } from "../../firebase/firebaseConfig";
 
 function Login() {
     const navigate=useNavigate()
+    console.log(import.meta.env.VITE_KEY);
     const [userLogin, setUserLogin] = useState(
         {
             email: '',

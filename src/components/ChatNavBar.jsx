@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 function ChatNavBar() {
 
     const {data}=useContext(MyContext)
-    
+    console.log(data.user);
     return (
         <div>
             <div className=" flex items-center  p-[10px] h-[60px] bg-[#5c2dc1]">

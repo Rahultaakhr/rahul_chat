@@ -3,7 +3,7 @@ import { GoogleAuthProvider, getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey:import.meta.env.VITE_API_KEY ,
+  apiKey:import.meta.env.VITE_KEY ,
   authDomain: "chat-de397.firebaseapp.com",
   projectId: "chat-de397",
   storageBucket: "chat-de397.appspot.com",
